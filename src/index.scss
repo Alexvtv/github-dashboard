@@ -1,0 +1,74 @@
+@import "~bootstrap/scss/bootstrap";
+
+.App {
+	.header {
+		background-color: #26252b;
+		color: #fff;
+		height: 50px;
+		padding: 11px 0 0 calc(50vw - 350px);
+		p, input {
+			display: inline-block;
+		}
+		input {
+			margin-left: 20px;
+		}
+	}
+
+	.repos-list {
+		margin: 50px 0 50px calc(50vw - 350px);
+		width: 700px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+		.repository {
+			position: relative;
+			height: 110px;
+			border: 1px solid #bdbdbd;
+			padding: 5px 10px;
+			p {
+				font-size: 14px;
+				margin: 0;
+			}
+			.repository-name, .repository-stars {
+				display: inline-block;
+			}
+			.repository-stars {
+				float: right;
+				font-size: 15px;
+			}
+			.repository-name {
+				font-size: 16px;
+				font-weight: 600;
+				width: 250px;
+				overflow-x: hidden;
+			}
+			.repository-commited {
+				position: absolute; 
+				bottom: 30px;
+			}
+			.repository-url {
+				width: auto;
+				height: 24px;
+				overflow: hidden;
+				position: absolute; 
+				bottom: 5px;
+			}
+		}
+	}
+
+	.repos-list__pages {
+		width: 400px;
+		margin: 0 0 30px calc(50vw - 200px);
+		button {
+			color: #ffffff;
+			background-color: #26252b;
+			border: 0;
+			width: 24px;
+			height: 27px;
+			margin: 0 6px;
+		}
+		.active {
+			color: #e3a878;
+		}
+	}
+}
