@@ -51,9 +51,61 @@
 			position: relative;
 		}
 	}
-	.card-commited, .card-language {
-	}
 	.card-language {
 		margin-left: 50px;
 	}
+}
+
+@media screen and (max-width: 760px) {
+
+
+.card {
+	padding-top: 20px;
+	width: 100vw;
+	border: 0;
+	border-bottom: 1px solid #bdbdbd;
+	border-radius: 0;
+	margin: 0;
+	a {
+		border: 1px solid #bdbdbd;
+		border-radius: 4px;
+		top: 0;
+		left: 0;
+	}
+	.card-name {
+		width: 270px;
+	}
+	.card-stars {
+		width: 100px;
+	}
+	.card-description {
+		border: 1px solid #bdbdbd;
+		padding: 2px;
+		border-radius: 4px;
+		width: 220px;
+	}
+	.card-owner {
+		width: 130px;
+		top: 20px;
+		left: calc(100vw - 160px);
+	}
+	.card-language {
+		margin-left: 10px;
+	}
+}
+
+}
+
+@media screen and (max-width: 420px) {
+
+	.card {
+		.card-description {
+			width: 160px;
+			margin: -10px 0 -50px 0;
+		}
+		.card-language {
+			margin-left: 60px;
+		}
+	}
+
 }

@@ -24,7 +24,7 @@ export class Card extends Component {
         </div>
 
         <p className="card-description">{dataCard.description}</p>
-        <p><span className="card-commited">Последнее изменение {dataCard.pushed_at}</span><span className="card-language">{dataCard.language}</span></p>
+        <p><span className="card-commited">Последнее изменение: {dataCard.pushed_at}</span> <span className="card-language">{dataCard.language}</span></p>
 
       </div>
     );
