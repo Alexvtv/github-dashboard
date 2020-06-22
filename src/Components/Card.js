@@ -19,8 +19,8 @@ export class Card extends Component {
         <p><span className="card-name">{dataCard.name}</span><span className="card-stars">&#9733; {dataCard.stargazers_count}</span></p>
         
         <div className="card-owner">
-          <img src={dataCard.owner.avatar_url} alt="avatar" />
-          <p>{dataCard.owner.login}</p>
+          <a href={dataCard.owner.html_url}><img src={dataCard.owner.avatar_url} alt="avatar" /></a>
+          <a href={dataCard.owner.html_url}><p>{dataCard.owner.login}</p></a>
         </div>
 
         <p className="card-description">{dataCard.description}</p>
