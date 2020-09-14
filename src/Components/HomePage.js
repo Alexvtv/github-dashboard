@@ -23,7 +23,6 @@ export class HomePage extends Component {
       })
       .then((data) => {
         this.setState({ reposData: data.items})
-        console.log(data.items)
       })
 
   }
